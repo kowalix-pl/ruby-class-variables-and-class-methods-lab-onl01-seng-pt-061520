@@ -13,4 +13,12 @@ def initialize(name,artist,genre)
   @@count += 1
 end
 
+def self.count
+  @@count 
+end 
+
+def self.genres
+  //returns 
+  @@genres
+end 
 end 

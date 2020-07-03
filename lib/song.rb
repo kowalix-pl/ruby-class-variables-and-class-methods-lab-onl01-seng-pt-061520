@@ -36,7 +36,7 @@ def self.genre_count
  ghash = Hash.new(0)
  @@genres.each { |genre| ghash[genre] += 1 }
   counts
- binding.pry
+# binding.pry
 end 
 
 def self.artist_count

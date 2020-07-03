@@ -29,12 +29,12 @@ def self.genres
   @@genres.uniq
 end 
 
-# def self.genre_count
-# #keys = names of each genre 
-# #values = number of songs that have that genre
-#   @@genres.each |genre| puts genre
-# binding.pry
-# end 
+def self.genre_count
+#keys = names of each genre 
+#values = number of songs that have that genre
+  @@genres.each |genre| puts genre
+binding.pry
+end 
 
 def self.artist_count
   

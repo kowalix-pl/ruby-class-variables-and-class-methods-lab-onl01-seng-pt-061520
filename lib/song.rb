@@ -38,7 +38,7 @@ def self.genre_count
 end 
 
 def self.artist_count
-   artists_hash = {}
+   artists_hash = Hash.new(0)
    @@artists.each { |artist| artists_hash[artist] += 1 }
    artists_hash
 end 

@@ -32,8 +32,11 @@ end
 def self.genre_count
 #keys = names of each genre 
 #values = number of songs that have that genre
-  @@genres.map {|genre| puts genre.count}
+  @@genres.map do |genre| 
+    [genre] = genre.count 
+  
 binding.pry
+end 
 end 
 
 def self.artist_count

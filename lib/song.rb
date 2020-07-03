@@ -33,10 +33,10 @@ def self.genre_count
 #keys = names of each genre 
 #values = number of songs that have that genre
 
- counts = Hash.new(0)
-@@genres.each { |genre| counts[genre] += 1 }
+ genre_hash = Hash.new(0)
+ @@genres.each { |genre| genre_hash[genre] += 1 }
   counts
-# binding.pry
+ binding.pry
 end 
 
 def self.artist_count

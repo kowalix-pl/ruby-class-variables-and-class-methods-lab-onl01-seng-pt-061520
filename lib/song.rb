@@ -1,3 +1,4 @@
+require 'pry'
 class Song 
   
 
@@ -27,4 +28,16 @@ def self.genres
 #returns an array of all of the genres of existing songs (only uniq)s  
   @@genres.uniq
 end 
+
+def self.genre_count
+ #keys = names of each genre 
+ #values = number of songs that have that genre
+   @@genres.each ||
+binding.pry
+end 
+
+def self.artist_count
+  
+end 
+
 end 

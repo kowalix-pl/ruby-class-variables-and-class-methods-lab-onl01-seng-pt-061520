@@ -35,8 +35,8 @@ def self.genre_count
 
  counts = Hash.new(0)
 @@genres.each { |genre| counts[genre] += 1 }
-  
-binding.pry
+  counts
+# binding.pry
 end 
 
 def self.artist_count
